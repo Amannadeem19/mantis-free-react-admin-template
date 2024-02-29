@@ -1,35 +1,85 @@
 // assets
-import { LoginOutlined, ProfileOutlined } from '@ant-design/icons';
+import {CodepenCircleOutlined, LoginOutlined, ProfileOutlined,
+    AppstoreAddOutlined,
+    AntDesignOutlined,
+    BarcodeOutlined,
+    BgColorsOutlined,
 
+} from '@ant-design/icons';
 // icons
 const icons = {
   LoginOutlined,
-  ProfileOutlined
+  ProfileOutlined,
+  CodepenCircleOutlined,
+  AppstoreAddOutlined,
+    AntDesignOutlined,
+    BarcodeOutlined,
+    BgColorsOutlined
 };
 
 // ==============================|| MENU ITEMS - EXTRA PAGES ||============================== //
 
 const pages = {
-  id: 'authentication',
-  title: 'Authentication',
+  id: 'eduConnect',
+  title: 'EduConnect.io',
   type: 'group',
   children: [
     {
-      id: 'login1',
-      title: 'Login',
+      id: 'classroom',
+      title: 'Classroom',
       type: 'item',
-      url: '/login',
-      icon: icons.LoginOutlined,
-      target: true
+      url: '/classroom',
+      icon: icons.CodepenCircleOutlined,
+      // target: true
     },
     {
-      id: 'register1',
-      title: 'Register',
+      id: 'classdetails',
+      // title: 'Classroom',
       type: 'item',
-      url: '/register',
+      url: '/c',
+      // icon: icons.CodepenCircleOutlined,
+      // target: true
+    },
+    {
+      id: 'GeneralAnnouncements',
+      title: 'GeneralAnnouncements',
+      type: 'item',
+      url: '/announcements',
       icon: icons.ProfileOutlined,
-      target: true
-    }
+      // target: true
+    },
+    {
+      id: 'Timetable',
+      title: 'Time Table',
+      type: 'item',
+      url: '/schedule',
+      icon: icons.LoginOutlined,
+      // target: true
+    },
+    {
+      id: 'Attendance',
+      title: 'Attendance',
+      type: 'item',
+      url: '/attendance',
+      icon: icons.BarcodeOutlined,
+      // target: true
+    },
+    {
+      id: 'Marks',
+      title: 'Marks',
+      type: 'item',
+      url: '/marks',
+      icon: icons.BgColorsOutlined,
+      // target: true
+    },
+    {
+      id: 'hub',
+      title: 'Opportunity Hub',
+      type: 'item',
+      url: '/ohub',
+      icon: icons.AppstoreAddOutlined,
+      // target: true
+    },
   ]
 };
 

@@ -3,10 +3,12 @@ import { lazy } from 'react';
 // project import
 import Loadable from 'components/Loadable';
 import MainLayout from 'layout/MainLayout';
+import TemporaryDrawer from 'pages/classroom/Drawer';
 
 // render - dashboard
 const DashboardDefault = Loadable(lazy(() => import('pages/dashboard')));
 
+// const Classroom = Loadable(lazy(() => import('pages/classroom')));
 // render - sample page
 const SamplePage = Loadable(lazy(() => import('pages/extra-pages/SamplePage')));
 
@@ -23,9 +25,13 @@ const MainRoutes = {
   element: <MainLayout />,
   children: [
     {
-      path: '/',
-      element: <DashboardDefault />
+      path: 'classroom',
+      element: <TemporaryDrawer />
     },
+    // {
+    //   path:'classroom',
+    //   element:<Classroom/>
+    // },
     {
       path: 'color',
       element: <Color />

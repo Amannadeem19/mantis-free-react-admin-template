@@ -1,5 +1,6 @@
 // project import
-import Routes from 'routes';
+import MainRoutes from 'routes';
+// import {Routes, Route} from 'react-router-dom';
 import ThemeCustomization from 'themes';
 import ScrollTop from 'components/ScrollTop';
 
@@ -8,7 +9,10 @@ import ScrollTop from 'components/ScrollTop';
 const App = () => (
   <ThemeCustomization>
     <ScrollTop>
-      <Routes />
+     {/* <Routes>
+      <Route path="/" element={<MainRoutes/>}></Route>
+     </Routes> */}
+     <MainRoutes/>
     </ScrollTop>
   </ThemeCustomization>
 );
